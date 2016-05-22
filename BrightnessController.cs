@@ -4,14 +4,9 @@ using System.Collections;
 
 public class BrightnessController : MonoBehaviour {
 
-    private PlayerPrefsManager pPM;
-
 	// Use this for initialization
 	void Start () {
-        pPM = GameObject.FindObjectOfType<PlayerPrefsManager>();
-
-        pPM.SetBrightness(0);
-        ChangeBrightness(pPM.GetBrightness());
+        ChangeBrightness(0);
     }
 
     public void ChangeBrightness(int brightness)
